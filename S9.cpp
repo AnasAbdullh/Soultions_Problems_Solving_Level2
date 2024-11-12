@@ -11,7 +11,7 @@ int ReadPositiveNumber(string Message)
     } while (Number <= 0);
     return Number;
 }
-int CountDigitsFrequrnce(int Number, short checkNum)
+int CountDigitsFrequency(int Number, short checkNum)
 {
     int count = 0, Remainder = 0;
     while (Number > 0)
@@ -25,24 +25,24 @@ int CountDigitsFrequrnce(int Number, short checkNum)
     }
     return count;
 }
-void PrintAllDigitsFrequrnce(int Number)
+void PrintAllDigitsFrequency(int Number)
 {
 
     for (size_t i = 0; i < 10; i++)
     {
-        short DigitsFrequrnce = 0;
-        DigitsFrequrnce = CountDigitsFrequrnce(Number, i);
+        short DigitsFrequency = 0;
+        DigitsFrequency = CountDigitsFrequency(Number, i);
 
-        if (DigitsFrequrnce > 0)
+        if (DigitsFrequency > 0)
         {
-            cout << " Digit " << i << " Frequency is " << DigitsFrequrnce << " Time(s) " << endl;
+            cout << " Digit " << i << " Frequency is " << DigitsFrequency << " Time(s) " << endl;
         }
     }
 }
 
 int main()
 {
-    PrintAllDigitsFrequrnce(ReadPositiveNumber("Enter Number"));
+    PrintAllDigitsFrequency(ReadPositiveNumber("Enter Number"));
 
     return 0;
 }

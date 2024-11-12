@@ -12,7 +12,7 @@ int RandomNumber(int from, int To)
 enum enCharType
 {
     SmallLetter = 1,
-    CaptialLetter = 2,
+    CapitalLetter = 2,
     SpecialCharacter = 3,
     Digit = 4
 };
@@ -22,7 +22,7 @@ char GetRandomCharater(enCharType CharType)
     {
     case enCharType::SmallLetter:
         return char(RandomNumber(97, 122));
-    case enCharType::CaptialLetter:
+    case enCharType::CapitalLetter:
         return char(RandomNumber(65, 90));
     case enCharType::SpecialCharacter:
         return char(RandomNumber(33, 47));
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
     srand((unsigned)time(NULL));
 
     cout << GetRandomCharater(enCharType::SmallLetter) << endl;
-    cout << GetRandomCharater(enCharType::CaptialLetter) << endl;
+    cout << GetRandomCharater(enCharType::CapitalLetter) << endl;
     cout << GetRandomCharater(enCharType::SpecialCharacter) << endl;
     cout << GetRandomCharater(enCharType::Digit) << endl;
 

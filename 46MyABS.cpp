@@ -5,19 +5,19 @@ using namespace std;
 
 int ReadNegativeNumber(string Message)
 {
-    int NumberNegitave;
+    int NumberNegative;
     do
     {
         cout << Message << endl;
-        cin >> NumberNegitave;
-    } while (NumberNegitave > 0);
+        cin >> NumberNegative;
+    } while (NumberNegative > 0);
 
-    return NumberNegitave;
+    return NumberNegative;
 }
 
 int main(int argc, char const *argv[])
 {
-    int NumberNegative = ReadNegativeNumber("Enter Negutive Number");
+    int NumberNegative = ReadNegativeNumber("Enter Negative Number");
 
     cout << abs(NumberNegative) << endl;
     cout << (NumberNegative) * -1 << endl;

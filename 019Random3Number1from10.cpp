@@ -13,7 +13,7 @@ int RandomNumber(int From, int To)
 
 int main(int argc, char const *argv[])
 {
-    // Seeds the random number gererator in C++, called only once
+    // Seeds the random number generator in C++, called only once
     srand((unsigned)time(NULL));
 
     cout << RandomNumber(1, 4) << endl;

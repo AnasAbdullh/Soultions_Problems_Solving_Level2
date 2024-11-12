@@ -37,7 +37,7 @@ void PrintArray(int Array[100], int Length)
     }
     cout << "\n";
 }
-short FindNumberPositiInArray(int Array[100], int length, int FindNumber)
+short FindNumberPositInArray(int Array[100], int length, int FindNumber)
 {
     for (short i = 0; i < length; i++)
     {
@@ -50,7 +50,7 @@ short FindNumberPositiInArray(int Array[100], int length, int FindNumber)
 }
 bool checkNumberInArray(int arr[100], int length, int Find)
 {
-    return FindNumberPositiInArray(arr, length, Find) != -1;
+    return FindNumberPositInArray(arr, length, Find) != -1;
 }
 int main(int argc, char const *argv[])
 {

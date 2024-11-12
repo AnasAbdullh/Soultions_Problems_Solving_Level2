@@ -6,7 +6,7 @@ using namespace std;
 enum enCharType
 {
     SmallLetter = 1,
-    CapitallLetter = 2,
+    CapitalLetter = 2,
     SpecialCharater = 3,
     Digit = 4
 };
@@ -23,7 +23,7 @@ char GetRandomCharacter(enCharType CharType)
     {
     case enCharType::SmallLetter:
         return char(RandomNumber(97, 122));
-    case enCharType::CapitallLetter:
+    case enCharType::CapitalLetter:
         return char(RandomNumber(65, 90));
     case enCharType::SpecialCharater:
         return char(RandomNumber(33, 47));
@@ -55,14 +55,14 @@ string GenerateKey()
 {
     string Key = "";
 
-    Key = GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4);
+    Key = GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4);
 
     return Key;
 }
-void FillArraywhitNumber(int input, string Array[100])
+void FillArrayWhitNumber(int input, string Array[100])
 {
     for (size_t i = 0; i < input; i++)
     {
@@ -86,10 +86,10 @@ int main(int argc, char const *argv[])
     int ReadNumber = ReadPositiveNumber("Enter Number");
     string Array[100];
 
-    FillArraywhitNumber(ReadNumber, Array);
+    FillArrayWhitNumber(ReadNumber, Array);
     PrintStringArray(Array, ReadNumber);
 
-    // enCharType charType = enCharType::CapitallLetter;
+    // enCharType charType = enCharType::CapitalLetter;
 
     return 0;
 }

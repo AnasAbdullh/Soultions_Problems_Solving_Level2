@@ -23,7 +23,7 @@ void PrintArray(int arr[100], int arrlength)
     cout << endl;
 }
 
-void RevernceNumber(int arrSource[100], int arrSourceLength, int arrPalindrome[100])
+void ReverenceNumber(int arrSource[100], int arrSourceLength, int arrPalindrome[100])
 {
     for (size_t i = 0; i < arrSourceLength; i++)
     {
@@ -31,7 +31,7 @@ void RevernceNumber(int arrSource[100], int arrSourceLength, int arrPalindrome[1
     }
 }
 
-bool CheckPalmindrome(int arrSource[100], int arrSourceLength, int arrPalindrome[100])
+bool CheckPalindrome(int arrSource[100], int arrSourceLength, int arrPalindrome[100])
 {
 
     for (size_t i = 0; i < arrSourceLength; i++)
@@ -53,9 +53,9 @@ int main(int argc, char const *argv[])
     PrintArray(arrSource, arrSourceLength);
 
     int arrPalindrome[100];
-    RevernceNumber(arrSource, arrSourceLength, arrPalindrome);
+    ReverenceNumber(arrSource, arrSourceLength, arrPalindrome);
 
-    if (CheckPalmindrome(arrSource, arrSourceLength, arrPalindrome))
+    if (CheckPalindrome(arrSource, arrSourceLength, arrPalindrome))
         cout << " Yes Palinderome " << endl;
     else
         cout << " Not " << endl;

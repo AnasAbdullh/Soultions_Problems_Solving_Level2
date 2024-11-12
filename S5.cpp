@@ -10,7 +10,7 @@ int ReadPositiveNumber(string Message)
     } while (Number <= 0);
     return Number;
 }
-void DigtidNumber(int Number)
+void DigitsNumber(int Number)
 {
     int Remainder = 0;
     while (Number > 0)
@@ -24,6 +24,6 @@ void DigtidNumber(int Number)
 }
 int main()
 {
-    DigtidNumber(ReadPositiveNumber("Enter Number"));
+    DigitsNumber(ReadPositiveNumber("Enter Number"));
     return 0;
 }

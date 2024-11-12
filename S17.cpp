@@ -9,7 +9,7 @@ string ReadPassword()
     cin >> Password;
     return Password;
 }
-bool GuessPassword(string OrignalPassword)
+bool GuessPassword(string OriginalPassword)
 {
     string Word = "";
     int count = 0;
@@ -27,7 +27,7 @@ bool GuessPassword(string OrignalPassword)
 
                 cout << "Trial [" << count << "] : " << Word << endl;
 
-                if (OrignalPassword == Word)
+                if (OriginalPassword == Word)
                 {
                     cout << "\n Password is " << Word << endl;
                     cout << " Found After " << count << " Trial(s)" << endl;

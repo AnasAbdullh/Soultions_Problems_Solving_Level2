@@ -3,7 +3,7 @@
 
 using namespace std;
 
-float GetFarctionsRound(float Number)
+float GetFractionsRound(float Number)
 {
     return Number - int(Number);
 }
@@ -13,7 +13,7 @@ float MyRound(float Number)
     int Intpart;
     Intpart = int(Number);
 
-    float Farction = GetFarctionsRound(Number);
+    float Farction = GetFractionsRound(Number);
     //   cout << Farction << endl;
 
     if (abs(Farction) >= .5)

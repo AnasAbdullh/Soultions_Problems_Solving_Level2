@@ -52,7 +52,7 @@ void PrintArray(int arr[], int length)
 // Function to copy one array to another
 void CopyArray(int arr[], int arr2[], int length, int &lengthtwo)
 {
-  lengthtwo = length; // Set lengthtwo to length
+  lengthtwo = length; // Set length to length
   for (int i = 0; i < length; i++)
   {
     arr2[i] = arr[i];

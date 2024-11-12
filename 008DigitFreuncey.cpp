@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int ReadPositiveNumber(string Message)
@@ -26,8 +28,8 @@ void DigitRerncey(int Number, int Number2)
             Num = Num * 10 + Reminder;
         }
     }
-    string lengthd = to_string(Num);
-    short sum = lengthd.length();
+    string length = to_string(Num);
+    short sum = length.length();
     cout << sum << endl;
 }
 
@@ -38,6 +40,6 @@ int main()
 
     DigitRerncey(One, Two);
 
-    // string sum = to_string(DigitRerncey(One, Two));
+    // string sum = to_string(DigitRrcey(One, Two));
     // cout << sum << endl;
 }

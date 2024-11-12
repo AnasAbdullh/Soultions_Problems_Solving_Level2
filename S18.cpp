@@ -29,11 +29,11 @@ string Decryptions(string txt, short EncrtypTionKey)
 
 int main(int argc, char const *argv[])
 {
-    short EncrytpionsKey = 2;
+    short EncryptionsKey = 2;
     string Text = ReadText();
 
-    string EncryptionsAfterText = Encryptions(Text, EncrytpionsKey);
-    string DecryptionsAfterText = Decryptions(EncryptionsAfterText, EncrytpionsKey);
+    string EncryptionsAfterText = Encryptions(Text, EncryptionsKey);
+    string DecryptionsAfterText = Decryptions(EncryptionsAfterText, EncryptionsKey);
 
     cout << " Text Before Encryption " << Text << endl;
     cout << " Text After Encryption " << EncryptionsAfterText << endl;

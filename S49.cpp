@@ -2,14 +2,14 @@
 #include <cmath>
 using namespace std;
 
-float GetFarctionsPart(float Number)
+float GetFractionsPart(float Number)
 {
     return Number - int(Number);
 }
 
 float MyCeil(float Number)
 {
-    if (abs(GetFarctionsPart(Number)) > 0)
+    if (abs(GetFractionsPart(Number)) > 0)
 
         if (Number > 0)
             return int(Number) + 1;

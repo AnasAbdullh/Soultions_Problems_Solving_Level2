@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int ReadPostitiveNumber(string Message)
+int ReadPositiveNumber(string Message)
 {
     int Number = 0;
     do
@@ -11,7 +11,7 @@ int ReadPostitiveNumber(string Message)
     } while (Number <= 0);
     return Number;
 }
-int RevernceNumber(int Number)
+int ReverenceNumber(int Number)
 {
     int Remainder = 0, count = 0;
     while (Number > 0)
@@ -25,7 +25,7 @@ int RevernceNumber(int Number)
 int main()
 
 {
-    cout << RevernceNumber(ReadPostitiveNumber("Enter Number Positive")) << endl;
+    cout << ReverenceNumber(ReadPositiveNumber("Enter Number Positive")) << endl;
 
     return 0;
 }

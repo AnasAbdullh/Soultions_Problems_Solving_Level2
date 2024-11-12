@@ -29,7 +29,7 @@ int SumNumber(int Number, short checkNum)
 int main()
 {
     int Number = ReadPositiveNumber("Enter Number ");
-    int SumOfNumber = ReadPositiveNumber("Enter ckeck Number ");
+    int SumOfNumber = ReadPositiveNumber("Enter check Number ");
 
     cout << SumNumber(Number, SumOfNumber) << endl;
 

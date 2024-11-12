@@ -12,7 +12,7 @@ int ReadPositiveNumber(string Message)
     return Number;
 }
 
-int RevernceNumber(int Number)
+int ReverenceNumber(int Number)
 {
     int Remainder = 0, count = 0;
     while (Number > 0)
@@ -23,17 +23,17 @@ int RevernceNumber(int Number)
     }
     return count;
 }
-bool IsPalinderome(int Number)
+bool IsPalindrome(int Number)
 {
-    return Number == RevernceNumber(Number);
+    return Number == ReverenceNumber(Number);
 }
 
 int main(int argc, char const *argv[])
 {
-    if (IsPalinderome(ReadPositiveNumber("Enter Number")))
-        cout << " Yes Palinderome " << endl;
+    if (IsPalindrome(ReadPositiveNumber("Enter Number")))
+        cout << " Yes Palindrome " << endl;
     else
-        cout << " Not Palinderome " << endl;
+        cout << " Not Palindrome " << endl;
 
     return 0;
 }

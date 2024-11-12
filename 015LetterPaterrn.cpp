@@ -12,7 +12,7 @@ int ReadPositiveNumber(string Message)
     return Number;
 }
 
-void InvertedNumber(int Number)
+void RecencyInvertedNumber(int Number)
 {
     int array[2] = {Number + 65 - 1, 65};
     for (size_t i = 65; i <= Number + 65 - 1; i++)
@@ -26,7 +26,7 @@ void InvertedNumber(int Number)
 }
 int main(int argc, char const *argv[])
 {
-    InvertedNumber(ReadPositiveNumber("Enter Number"));
+    RecencyInvertedNumber(ReadPositiveNumber("Enter Number"));
 
     return 0;
 

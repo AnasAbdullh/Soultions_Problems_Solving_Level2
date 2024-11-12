@@ -44,7 +44,7 @@ void PrintArray(int arr[], int length)
 }
 
 // Function to copy one array to another
-void CopyDidtictNumber(int arr[], int arr2[], int length, int &lengthtwo)
+void CopyDistrictNumber(int arr[], int arr2[], int length, int &lengthtwo)
 {
     arr2[0] = arr[0];
     for (size_t i = 0; i < length; i++)
@@ -65,7 +65,7 @@ int main()
     FillArrayWithRandomNumbers(arr, length);
     PrintArray(arr, length);
 
-    CopyDidtictNumber(arr, arr2, length, lengthtwo);
+    CopyDistrictNumber(arr, arr2, length, lengthtwo);
 
     PrintArray(arr2, lengthtwo);
 

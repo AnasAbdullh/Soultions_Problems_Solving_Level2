@@ -25,14 +25,14 @@ void ReadArray(int NumberArray[100], int &Arraylength)
         cin >> NumberArray[i];
     }
 }
-void PrintArray(int NumberArray[100], int arrlength)
+void PrintArray(int NumberArray[100], int arraylength)
 {
-    for (size_t i = 0; i < arrlength; i++)
+    for (size_t i = 0; i < arraylength; i++)
     {
         cout << NumberArray[i] << " ";
     }
 }
-int repitesTime(int Number, int check, int array[100])
+int recitesTime(int Number, int check, int array[100])
 {
     short count = 0;
 
@@ -49,14 +49,14 @@ int repitesTime(int Number, int check, int array[100])
 int main(int argc, char const *argv[])
 {
 
-    int Array[100], Lentgh, Number;
+    int Array[100], Length, Number;
 
-    ReadArray(Array, Lentgh);
+    ReadArray(Array, Length);
     int NumberCheck = ReadPositiveNumber("enter number check elemnents ");
 
-    int Numberelemntes = repitesTime(Lentgh, NumberCheck, Array);
+    int Numberelemntes = recitesTime(Length, NumberCheck, Array);
     cout << " thr Oringale Number ";
-    PrintArray(Array, Lentgh);
+    PrintArray(Array, Length);
 
     cout << "\n the elemntes Number " << Numberelemntes << endl;
 

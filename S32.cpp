@@ -36,12 +36,12 @@ void PrintArray(int Array[100], int Length)
     }
     cout << "\n";
 }
-void Reverse(int Array[100], int arrayrever[100], int length)
+void Reverse(int Array[100], int arrayer[100], int length)
 {
 
     for (short i = length - 1; i >= 0; i--)
     {
-        arrayrever[i] = Array[length - 1 - i];
+        arrayer[i] = Array[length - 1 - i];
     }
 }
 

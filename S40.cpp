@@ -3,12 +3,12 @@
 using namespace std;
 
 // Function to add an element to an array
-void AddArrayElement(int Number, int arr[100], int &arrlength)
+void AddArrayElement(int Number, int arr[100], int &arraylength)
 {
-    if (arrlength < 100)
+    if (arraylength < 100)
     { // Check array bounds
-        arrlength++;
-        arr[arrlength - 1] = Number;
+        arraylength++;
+        arr[arraylength - 1] = Number;
     }
     else
     {
@@ -16,7 +16,7 @@ void AddArrayElement(int Number, int arr[100], int &arrlength)
     }
 }
 
-void FillArray(int arr[100], int &arrlength)
+void FillArray(int arr[100], int &arraylength)
 {
     arr[0] = 10;
     arr[1] = 10;
@@ -29,11 +29,11 @@ void FillArray(int arr[100], int &arrlength)
     arr[8] = 70;
     arr[9] = 90;
 
-    arrlength = 10;
+    arraylength = 10;
 }
-short FindNumberPositiInArray(int Number, int arr[100], int arrlength)
+short FindNumberPositInArray(int Number, int arr[100], int arraylength)
 {
-    for (short i = 0; i < arrlength; i++)
+    for (short i = 0; i < arraylength; i++)
     {
         if (arr[i] == Number)
         {
@@ -42,16 +42,16 @@ short FindNumberPositiInArray(int Number, int arr[100], int arrlength)
     }
     return -1;
 }
-bool IsNumberInArray(int Number, int arr[100], int arrlength)
+bool IsNumberInArray(int Number, int arr[100], int arraylength)
 {
-    return FindNumberPositiInArray(Number, arr, arrlength) != -1;
+    return FindNumberPositInArray(Number, arr, arraylength) != -1;
 }
 
 // Function to print an array
-void PrintArray(int arr[100], int arrlength)
+void PrintArray(int arr[100], int arraylength)
 {
 
-    for (int i = 0; i < arrlength; i++)
+    for (int i = 0; i < arraylength; i++)
     {
         cout << arr[i] << " ";
     }
@@ -59,7 +59,7 @@ void PrintArray(int arr[100], int arrlength)
 }
 
 // Function to copy one array to another
-void CopyDidtictNumber(int arrSource[100], int arrDestination[100], int Sourcelength, int &DestinationLength)
+void CopyDistrictNumber(int arrSource[100], int arrDestination[100], int Sourcelength, int &DestinationLength)
 {
 
     for (int i = 0; i < Sourcelength; i++)
@@ -79,7 +79,7 @@ int main()
     FillArray(arrSource, Sourcelength);
     PrintArray(arrSource, Sourcelength);
 
-    CopyDidtictNumber(arrSource, arrDestination, Sourcelength, DestinationLength);
+    CopyDistrictNumber(arrSource, arrDestination, Sourcelength, DestinationLength);
     PrintArray(arrDestination, DestinationLength);
 
     return 0;

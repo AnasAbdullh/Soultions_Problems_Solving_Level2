@@ -12,7 +12,7 @@ int ReadPositiveNumber(string Message)
     return Number;
 }
 
-void InvertedNumber(int Number)
+void InvertedLetter(int Number)
 {
     for (size_t i = Number + 65 - 1; i >= 65; i--)
     {
@@ -25,7 +25,7 @@ void InvertedNumber(int Number)
 }
 int main(int argc, char const *argv[])
 {
-    InvertedNumber(ReadPositiveNumber("Enter Number"));
+    InvertedLetter(ReadPositiveNumber("Enter Number"));
 
     return 0;
 }

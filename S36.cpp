@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
 
     inputToUser(arr, length);
 
-    cout << "\nThe Lngth Array \n " << length;
+    cout << "\nThe Length Array \n " << length;
     cout << endl;
 
     PrintArray(arr, length);

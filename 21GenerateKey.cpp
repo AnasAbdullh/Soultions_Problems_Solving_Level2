@@ -2,7 +2,7 @@
 #include <cstdlib>
 using namespace std;
 
-int ReadPostitiveNumber(string Message)
+int ReadPositiveNumber(string Message)
 {
     int Number = 0;
     do
@@ -54,7 +54,7 @@ void checkNumberUser(int user)
 int main(int argc, char const *argv[])
 {
     srand((unsigned)time(NULL));
-    checkNumberUser(ReadPostitiveNumber("Enter Number"));
+    checkNumberUser(ReadPositiveNumber("Enter Number"));
 
     return 0;
 }

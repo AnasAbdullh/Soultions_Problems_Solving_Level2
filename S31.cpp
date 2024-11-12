@@ -41,7 +41,7 @@ void PrintArray(int Array[100], int Length)
         cout << Array[i] << " ";
     }
 }
-void SufflutArray(int Array[100], int length)
+void SufflenArray(int Array[100], int length)
 {
     for (size_t i = 0; i < length; i++)
     {
@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
     cout << "\nArray : \n";
     PrintArray(NumtoUsr, lengthNumber);
 
-    SufflutArray(NumtoUsr, lengthNumber);
+    SufflenArray(NumtoUsr, lengthNumber);
     cout << "\nSwap Random : \n";
     PrintArray(NumtoUsr, lengthNumber);
 

@@ -37,7 +37,7 @@ void PrintArray(int Array[100], int Length)
     }
     cout << "\n";
 }
-short FindNumberPositiInArray(int Array[100], int length, int FindNumber)
+short FindNumberPositInArray(int Array[100], int length, int FindNumber)
 {
     for (short i = 0; i < length; i++)
     {
@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
     check = ReadPositiveNumber("Please enter a number to search for ?");
     cout << "Number you are looking for is : " << check << endl;
 
-    short Find = FindNumberPositiInArray(arr, length, check);
+    short Find = FindNumberPositInArray(arr, length, check);
 
     if (Find == -1)
     {

@@ -24,11 +24,11 @@ void PrintArray(int Array[100], int Length)
         cout << Array[i] << " ";
     }
 }
-void CopyArray(int arrSource[100], int arrDestfins[100], int Length)
+void CopyArray(int arrSource[100], int arrDentins[100], int Length)
 {
     for (size_t i = 0; i < Length; i++)
     {
-        arrDestfins[i] = arrSource[i];
+        arrDentins[i] = arrSource[i];
     }
 }
 

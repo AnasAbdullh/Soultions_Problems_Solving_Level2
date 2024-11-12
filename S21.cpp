@@ -5,7 +5,7 @@ using namespace std;
 enum enCharType
 {
     SmallLetter = 1,
-    CapitallLetter = 2,
+    CapitalLetter = 2,
     SpecialCharater = 3,
     Digit = 4
 };
@@ -22,7 +22,7 @@ char GetRandomCharacter(enCharType CharType)
     {
     case enCharType::SmallLetter:
         return char(RandomNumber(97, 122));
-    case enCharType::CapitallLetter:
+    case enCharType::CapitalLetter:
         return char(RandomNumber(65, 90));
     case enCharType::SpecialCharater:
         return char(RandomNumber(33, 47));
@@ -54,10 +54,10 @@ string GenerateKey()
 {
     string Key = "";
 
-    Key = GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4) + "-";
-    Key += GenerateWord(enCharType::CapitallLetter, 4);
+    Key = GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4) + "-";
+    Key += GenerateWord(enCharType::CapitalLetter, 4);
 
     return Key;
 }
@@ -73,7 +73,7 @@ void PrintNumberUser(int input)
 int main(int argc, char const *argv[])
 {
     PrintNumberUser(ReadPositiveNumber("Enter Number"));
-    // enCharType charType = enCharType::CapitallLetter;
+    // enCharType charType = enCharType::CapitalLetter;
 
     return 0;
 }
